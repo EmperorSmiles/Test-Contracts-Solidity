@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.24; // Solidity Version
+pragma solidity 0.8.18; // Solidity Version
 
 contract SimpleStorage {
     
@@ -25,7 +25,7 @@ contract SimpleStorage {
     // Person public sam = Person({favouriteNumber: 4, name: "Sam"});
     // Person public leslie = Person({favouriteNumber: 34, name: "Leslie"});
 
-    function store(uint256 _favouriteNumber) public {
+    function store(uint256 _favouriteNumber) public virtual {
         myFavouriteNumber = _favouriteNumber;
     }
 
